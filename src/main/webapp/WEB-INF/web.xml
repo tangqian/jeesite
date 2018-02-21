@@ -33,6 +33,16 @@
 		<filter-name>encodingFilter</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
+
+    <filter>
+        <filter-name>accessFilter</filter-name>
+        <filter-class>com.thinkgem.jeesite.common.filter.AccessFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>accessFilter</filter-name>
+        <url-pattern>/a/*</url-pattern>
+        <url-pattern>/f/*</url-pattern>
+    </filter-mapping>
 	
 	<!-- Apache Shiro -->
 	<filter>
